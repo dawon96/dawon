@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/img3"
+        android:background="#ff00ff"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="올리기"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv5"
+        android:layout_below="@id/img3"
+        android:text="카테고리설정이거뭐로해야함"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et2"
+        android:layout_below="@id/tv5"
+        android:hint="제목"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et3"
+        android:layout_below="@id/et2"
+        android:hint="가격"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/et4"
+        android:layout_below="@id/et3"
+        android:hint="내용"
+        />
+
+
+</RelativeLayout>

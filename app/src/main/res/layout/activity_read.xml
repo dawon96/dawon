@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="상품명"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:background="#dfdfdf"
+        android:id="@+id/tv1"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel1"
+        android:layout_below="@id/tv1"
+        android:layout_margin="15dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/img1"
+            android:background="#ff0000"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/tv2"
+            android:layout_toRightOf="@id/img1"
+            android:layout_marginLeft="20dp"
+            android:text="Nickname"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/tv3"
+            android:layout_below="@id/tv2"
+            android:layout_toRightOf="@id/img1"
+            android:layout_marginLeft="20dp"
+            android:text="상품수/팔로워수"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:text="+팔로우"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/img1"
+            android:layout_centerHorizontal="true"
+            android:background="#ffff00"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/scl1"
+            android:layout_below="@id/img2">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="상품설명"
+                />
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin1"
+        android:layout_below="@id/rel1"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="댓글"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="등록"
+            android:layout_weight="5"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin2"
+        android:layout_below="@id/lin1"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/b3"
+            android:text="찜"/>
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv4"
+            android:text="가격"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/b4"
+            android:text="채팅으로 구매"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

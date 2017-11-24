@@ -26,6 +26,12 @@
         </activity>
         <activity android:name=".LookingActivity">
         </activity>
+        <activity android:name=".HomeActivity">
+        </activity>
+        <activity android:name=".LoginActivity">
+        </activity>
+        <activity android:name=".SignupActivity">
+        </activity>
     </application>
 
 </manifest>
