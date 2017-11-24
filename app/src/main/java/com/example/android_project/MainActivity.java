@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.bt_chatting:
                 Intent intent = new Intent(MainActivity.this, ChattingActivity.class);
                 startActivity(intent);
-                finish();
                 break;
         }
     }
