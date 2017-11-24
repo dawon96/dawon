@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   채팅"
+        android:textSize="20dp"
+        android:background="#f3eec7"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/tv_picture"
+                android:background="#eae7e7"
+                android:text="사진"
+                android:gravity="center"
+                />
+            <Button
+                android:id="@+id/bt_chatting"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/tv_picture"
+                android:gravity="center"
+                android:text="최근 채팅 내역" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
